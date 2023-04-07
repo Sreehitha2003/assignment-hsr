@@ -1,0 +1,247 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .brand-title {
+    margin: 0;
+  }
+  
+  .dropdown-content li {
+    list-style: none;
+  }
+
+  .search input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  *{
+      padding: 0;
+      margin: 0;
+  }
+  header {
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  header h2 {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 50px;
+  }
+  .underText {
+    color: white;
+    margin-top: 38px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .dropbtn {
+    background-color: #031d44;
+    color: white;
+    padding: 10px;
+    margin-right: 50px;
+    font-size: 16px;
+  }
+  
+  .dropdown {
+    position:relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #031d44;}
+
+  .explore{
+    border-radius: 30px;
+    padding: 10px 35px;
+    background-color: white;
+    font-weight: 500;
+    font-size: large;
+    margin-top: 30px;
+  }
+  .explore:hover{
+    transition: ease-in-out;
+    cursor: pointer;
+  }
+  .abt{
+    background-image: url("https://theyellowspot.com/wp-content/uploads/2020/01/closing-image.png");
+    background-size:cover;
+    height: 60vh;
+    color: #011430;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .abt h1{
+    margin-top: 70px; 
+    background-color: #ddd;
+  }
+  .mem{
+    border: 1px solid black;
+    display: block;
+    margin: 18px 60px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+  }
+  .head {
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .head::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 3%;
+    background-color: #132945;
+    animation: h2-bottom 1s infinite ease-in-out alternate;
+  }
+  @keyframes h2-bottom {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 18%;
+    }
+  }
+  .members{
+    display: flex;
+    flex-direction: row;
+    margin-left:150px;
+  }
+  footer {
+    height: 30vh;
+    background-color:#2f60a0;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+footer h2{
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    padding: 2vh 0;
+}
+footer ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    margin: 6vh 0;
+    
+}
+footer ul li {
+    list-style-type: none;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    transition: 200ms;
+}
+footer i {
+    transition: 200ms;
+}
+footer i:hover{
+    color: #2f60a0;
+    text-shadow: 0px 0px 10px #2f60a0;
+}
+.up{
+  display: block;
+  border: 1px solid rgb(114, 111, 111);
+  padding: 5px;
+  background-color: #b0abab;
+  border-radius:50%;
+  margin-left: 900px;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #132945;
+}
+
+.contact input {
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  border: 2px solid #132945;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px;
+  width: 100%;
+}
+.form-control label{
+  margin-top: 50px;
+}
+
+.content {
+  padding: 2rem;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: fit-content;
+  width: 60%;
+}
+
+#contactsubmit {
+  margin-top: 1em;
+  border: 2px solid #132945;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px white;
+  background-color: #132945;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px;
+  margin-left: 30px ;
+  width: 50%;
+}
+.button{
+  margin-left: 30px;
+}
